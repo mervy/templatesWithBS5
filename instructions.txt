@@ -1,0 +1,13 @@
+Crie todo o código html com bootstrap 5 e icones do bootstrap também, das páginas a seguir usand a estrutura de diretórios dada:
+
+├── assets
+│   ├── css
+│   ├── img
+│   └── js
+├── contact.html
+├── index.html
+├── list.txt
+├── login.html
+├── single-page.html
+├── about.html
+├── articles.html

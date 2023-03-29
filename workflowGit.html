@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Workflow GIT</title>
+        <style>
+            body {
+                margin: auto;
+                width: 80%;
+                padding: 10px;
+            }
+
+            img {
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 100%;
+                height: 30vh;
+            }
+            h1{
+                text-align: center;
+            }
+        </style>
+    </head>
+    <body>
+        <p><img src="https://www.20i.com/blog/wp-content/uploads/2022/08/basic-git-workflow-1.png"
+                alt="# Fluxo de trabalho com Git e GitHub "></p>
+        <h1 id="fluxo-de-trabalho-com-git-e-github">Fluxo de trabalho com Git e GitHub</h1>
+        <p>Usando as branchs <strong>main</strong>, <strong>develop</strong>, <strong>feature</strong>,
+            <strong>release</strong> e <strong>hotfix</strong>, onde os recursos são desenvolvidos nas branches de
+            <strong>feature</strong>, unidos e testados na branch de <strong>release</strong> e depois implantados em
+            produção na branch de <strong>main</strong>.
+        </p>
+        <h3 id="criar-um-novo-reposit-rio-no-github-e-clon-lo-para-sua-m-quina-local-">Criar um novo repositório no
+            GitHub e cloná-lo para sua máquina local:</h3>
+        <ul>
+            <li><code>git clone https://github.com/seu-usuario/seu-repositorio.git</code></li>
+            <li><code>cd seu-repositorio</code></li>
+        </ul>
+        <h3 id="criar-as-branchs-principais-">Criar as branchs principais:</h3>
+        <ul>
+            <li><code>git checkout -b main</code></li>
+            <li><code>git push -u origin main</code></li>
+            <li><code>git checkout -b develop</code></li>
+            <li><code>git push -u origin develop</code></li>
+        </ul>
+        <h3 id="criar-uma-nova-branch-de-feature-para-desenvolver-um-recurso-">Criar uma nova branch de feature para
+            desenvolver um recurso:</h3>
+        <ul>
+            <li><code>git checkout -b feature/nome-do-recurso</code></li>
+        </ul>
+        <h3 id="desenvolver-o-recurso-na-branch-de-feature-e-fazer-commits-regulares-">Desenvolver o recurso na branch
+            de feature e fazer commits regulares:</h3>
+        <ul>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m &quot;descrição do commit&quot;</code></li>
+        </ul>
+        <h3 id="quando-o-recurso-estiver-pronto-para-ser-testado-mesclar-a-branch-de-feature-na-branch-de-release-">
+            Quando o recurso estiver pronto para ser testado, mesclar a branch de feature na branch de release:</h3>
+        <ul>
+            <li><code>git checkout release</code></li>
+            <li><code>git merge --no-ff feature/nome-do-recurso</code></li>
+            <li><code>git push origin release</code></li>
+        </ul>
+        <h3
+            id="testar-a-branch-de-release-e-fazer-ajustes-se-necess-rio-depois-mesclar-a-branch-de-release-na-branch-de-main-">
+            Testar a branch de release e fazer ajustes se necessário. Depois, mesclar a branch de release na branch de
+            main:</h3>
+        <ul>
+            <li><code>git checkout main</code></li>
+            <li><code>git merge --no-ff release</code></li>
+            <li><code>git push origin main</code></li>
+        </ul>
+        <h3
+            id="mesclar-a-branch-de-release-na-branch-de-develop-para-que-os-recursos-desenvolvidos-possam-ser-integrados-em-um-pr-ximo-release-">
+            Mesclar a branch de release na branch de develop para que os recursos desenvolvidos possam ser integrados em
+            um próximo release:</h3>
+        <ul>
+            <li><code>git checkout develop</code></li>
+            <li><code>git merge --no-ff release</code></li>
+            <li><code>git push origin develop</code></li>
+        </ul>
+        <h3 id="se-houver-um-problema-cr-tico-na-produ-o-criar-uma-branch-de-hotfix-para-corrigir-o-problema-">Se houver
+            um problema crítico na produção, criar uma branch de hotfix para corrigir o problema:</h3>
+        <ul>
+            <li><code>git checkout -b hotfix/nome-do-problema</code></li>
+        </ul>
+        <h3 id="corrigir-o-problema-na-branch-de-hotfix-e-fazer-commits-regulares-">Corrigir o problema na branch de
+            hotfix e fazer commits regulares:</h3>
+        <ul>
+            <li><code>git add .</code></li>
+            <li><code>git commit -m &quot;descrição do commit&quot;</code></li>
+            <li>
+                <h3 id="mesclar-a-branch-de-hotfix-na-branch-de-main-para-corrigir-o-problema-na-produ-o-">Mesclar a
+                    branch de hotfix na branch de main para corrigir o problema na produção:</h3>
+            </li>
+            <li><code>git checkout main</code></li>
+            <li><code>git merge --no-ff hotfix/nome-do-problema</code></li>
+            <li><code>git push origin main</code></li>
+        </ul>
+        <h3
+            id="mesclar-a-branch-de-hotfix-na-branch-de-develop-para-que-a-corre-o-possa-ser-integrada-em-um-pr-ximo-release-">
+            Mesclar a branch de hotfix na branch de develop para que a correção possa ser integrada em um próximo
+            release:</h3>
+        <ul>
+            <li><code>git checkout develop</code></li>
+            <li><code>git merge --no-ff hotfix/nome-do-problema</code></li>
+            <li><code>git push origin develop</code></li>
+        </ul>
+        <p>Esse é um exemplo de fluxo de trabalho possível com Git e GitHub usando as branchs main, develop, feature,
+            release e hotfix. Você pode personalizar esse fluxo de acordo com as necessidades da sua equipe e do seu
+            projeto.</p>
+
+    </body>
+</html>
