@@ -1,0 +1,61 @@
+*   commit 2ef37a56f1a651ad64ee27e69f2f01ad8e4f7c8e
+|\  Merge: f11d391 ee9578f
+| | Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| | Date:   Thu Mar 30 10:12:58 2023 -0300
+| | 
+| |     Merge pull request #2 from mervy/feature/01_site-articles-page
+| |     
+| |     Alter workflow
+| | 
+| * commit ee9578f2e661c058d6fd694f465b1d257b01be42
+| | Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| | Date:   Thu Mar 30 10:06:25 2023 -0300
+| | 
+| |     Alter workflow
+| |   
+* |   commit f11d3913d54c615d8e17278f810bd5229f841f8c
+|\ \  Merge: ebd34a5 abad132
+| | | Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| | | Date:   Wed Mar 29 18:16:27 2023 -0300
+| | | 
+| | |     Merge pull request #1 from mervy/featute/dashboard
+| | |     
+| | |     Create dashboard with bootstrap 5
+| | | 
+| * | commit abad1323c270e2aa7be85cc060fb680930528872
+|/ /  Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| |   Date:   Wed Mar 29 18:16:09 2023 -0300
+| |   
+| |       Create dashboard with bootstrap 5
+| | 
+* | commit ebd34a599e69f01206ab76fec0ba55d6f815ceb2
+|\| Merge: b415842 1714619
+| | Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| | Date:   Wed Mar 29 10:38:10 2023 -0300
+| | 
+| |     Merge branch 'develop' - Version 1.0
+| | 
+| * commit 17146192f8e77d605263e7ac31cfb72dc92860cf
+|/| Merge: b415842 dd82acc
+| | Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| | Date:   Wed Mar 29 10:36:21 2023 -0300
+| | 
+| |     Merge branch 'release' into develop - Version 1.0
+| | 
+| * commit dd82accc54e34951f7306f1b3392ce91effdc5bb
+|/  Author: Rogério Soares <rgrsoares@yahoo.com.br>
+|   Date:   Wed Mar 29 10:28:53 2023 -0300
+|   
+|       Finish page index.html
+| 
+* commit b41584294a4a09dd63d79f739a3ae002a5dcd820
+| Author: Rogério Soares <rgrsoares@yahoo.com.br>
+| Date:   Wed Mar 29 10:17:01 2023 -0300
+| 
+|     Initial ideas
+| 
+* commit 0f06dd2ca919929f494bed1acdced76c7bc09957
+  Author: Rogério Soares <rgrsoares@yahoo.com.br>
+  Date:   Wed Mar 29 10:14:49 2023 -0300
+  
+      Initial commit
